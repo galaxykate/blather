@@ -29,6 +29,8 @@ $(document).ready(function() {
     }
 
     var slideCounter = 0;
+    
+    var timeSinceLastBlather = 0;
 
     setInterval(function() {
         slideCounter++;
