@@ -1,0 +1,38 @@
+body {
+}
+#slides {
+	width:400px;
+	height:300px;
+	border:solid black 3px;
+	padding:10px;
+}
+#stage {
+-webkit-perspective:500px; /* Chrome, Safari, Opera */
+perspective:500px;
+}
+.slideQuote {
+	padding:5px;
+	background-color:rgba(0, 0, 0, .3);
+	font-size:25px;
+}
+.slideTitle {
+	font-size:25px;
+}
+#presenter {
+	overflow-y:scroll;
+	margin:2px;
+	padding:5px;
+	border-radius:14px;
+	width:400px;
+	background-color:rgba(220, 120, 250, .3);
+	height:30px;
+}
+#audience {
+	overflow-y:scroll;
+	margin:2px;
+	padding:5px;
+	border-radius:14px;
+	width:400px;
+	background-color:rgba(90, 255, 150, .3);
+	height:30px;
+}
