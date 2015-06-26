@@ -1,14 +1,16 @@
 body {
+	font-family:Arial,Helvetica,sans-serif;
 }
 #slides {
+	font-family:Arial,Helvetica,sans-serif;
 	width:400px;
 	height:300px;
 	border:solid black 3px;
 	padding:10px;
 }
 #stage {
--webkit-perspective:500px; /* Chrome, Safari, Opera */
-perspective:500px;
+	-webkit-perspective:500px; /* Chrome, Safari, Opera */
+	perspective:500px;
 }
 .slideQuote {
 	padding:5px;
@@ -18,21 +20,36 @@ perspective:500px;
 .slideTitle {
 	font-size:25px;
 }
+img {
+	width:300px;
+	height:200px;
+}
 #presenter {
 	overflow-y:scroll;
-	margin:2px;
-	padding:5px;
-	border-radius:14px;
+	margin:5px;
+	padding:8px;
+	border-radius:24px;
 	width:400px;
 	background-color:rgba(220, 120, 250, .3);
+	color:rgba(40, 20, 10, .3);
 	height:30px;
+}
+#presenter.active {
+	box-shadow:0px 0px 0px 4px rgba(220, 120, 250, 1);
+	color:rgba(0, 0, 0, 1);
 }
 #audience {
 	overflow-y:scroll;
-	margin:2px;
-	padding:5px;
-	border-radius:14px;
+	margin:5px;
+	padding:8px;
+	border-radius:24px;
 	width:400px;
 	background-color:rgba(90, 255, 150, .3);
 	height:30px;
+	color:rgba(40, 20, 10, .3);
+}
+
+#audience.active {
+	box-shadow:0px 0px 0px 4px rgba(90, 255, 150, 1);
+	color:rgba(0, 0, 0, 1);
 }

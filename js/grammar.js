@@ -51,12 +51,13 @@ var rawBlatherGrammar = {
     "origin" : "<h3>#greetings#, and welcome to the #place#</h3><p>Schedule:</p><p>#projectDesc#<p>#projectDesc#<p>#projectDesc#",
 
     // Official Blather grammar stuff
-
+    image : "<img src='http://photography.naturestocklibrary.com/orca-stock-photo.jpg'>",
     slideTitle : ["<div class='slideTitle'>My Title</div>"],
     slideQuote : ["<div class='slideQuote'><div>Hello World</div><div><div></div>"],
     slide : ["#slideTitle##image#", "#slideTitle##bullets#", "#sideImage##bullets#", "#slideQuote#"],
 
-    presenterBlather : ["Blah blah blah.", "And such", "Narrative is....", "As is other work"],
+    introduction : ["#origin#"],
+    presenterBlather : ["#introduction# blah blah blah"],
     audienceBlather : ["This is less of a question, and more of a statement.  #observation#.", "I have #number# of questions", "Are you familiar with the work of #author#?"],
     presenterResponse : ["I don't think that's relevant.", "I find that work ideologically questionable", "I considered it, but it was impractical"],
 };
